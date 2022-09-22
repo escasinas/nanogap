@@ -54,6 +54,7 @@ or
 - CSV output containing assembly information.
 
 **Command**
+
 For a single fastq file
 ```sh
 conda activate nanogap
