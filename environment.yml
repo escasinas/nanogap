@@ -1,0 +1,12 @@
+name: nanogap
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - flye=2.9.1
+  - bcftools=1.15.1
+  - medaka=1.7.1
+  - barrnap=0.9
+  - blast=2.13.0
+
