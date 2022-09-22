@@ -58,13 +58,13 @@ or
 For a single fastq file
 ```sh
 conda activate nanogap
-python nanogap.py [options] /path/to/file.fastq
+python nanogap.py path/to/file.fastq [options]
 ```
 
 For a directory containing fastq files
 ```sh
 conda activate nanogap
-python nanogap.py [options] /path/to/reads_directory
+python nanogap.py path/to/reads_directory [options]
 ```
 
 ---
