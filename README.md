@@ -32,7 +32,7 @@ NanoGAP uses a number of open source projects:
 
 ```sh
 git clone https://github.com/escasinas/nanogap.git
-cd ngap
+cd nanogap
 source install.sh
 ```
 
@@ -73,7 +73,7 @@ python nanogap.py path/to/reads_directory [options]
 
 `-h | --help` Show help message and exit.
 
-`-t | --threads` Number of threads/CPUs to run Minimap2, Flye, Racon, Medaka and Barrnap (**default: 4**).
+`-t | --threads` Number of threads/CPUs to run Minimap2, Flye, Racon, Medaka and Barrnap (**default: MAX CPU**).
 
 `-o | --outdir` Name of output directory (**default: ngap_output**).
 
