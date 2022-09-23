@@ -479,20 +479,21 @@ output_dir = args.outdir # name of output dir
 medaka_model = args.model # medaka model option
 
 # # # # # PROGRAM # # # # # 
-
-if os.path.isfile(input_read):
-    # run the pipeline on a single fastq file
-    output_info = process_file_input(input_read, output_dir, medaka_model, num_threads)
-
-    # write the output csv containing assembly information
-    write_one_row(output_dir, output_info)
-
-elif os.path.isdir(input_read):
-    # run the pipeline on a directory containing more than one fastq files
-    output_list = process_directory_input(input_read, output_dir, medaka_model, num_threads)
+if __name__ == "__main__":
     
-    # write the output csv containing multiple rows of assembly information
-    write_multi_rows(output_dir, output_list)
+    if os.path.isfile(input_read):
+        # run the pipeline on a single fastq file
+        output_info = process_file_input(input_read, output_dir, medaka_model, num_threads)
 
-else:
-    print("Invalid input file/directory")
+        # write the output csv containing assembly information
+        write_one_row(output_dir, output_info)
+
+    elif os.path.isdir(input_read):
+        # run the pipeline on a directory containing more than one fastq files
+        output_list = process_directory_input(input_read, output_dir, medaka_model, num_threads)
+
+        # write the output csv containing multiple rows of assembly information
+        write_multi_rows(output_dir, output_list)
+
+    else:
+        print("Invalid input file/directory")
