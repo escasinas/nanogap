@@ -1,7 +1,7 @@
 # NanoGAP
 
 
-The Nanopore Genome Assembly Pipeline (`NanoGAP`) utilises a variety of open-source tools and software to automate a non-hybrid (long reads only) genome assembly and self-correction of error prone nanopore reads.
+The Nanopore Genome Assembly Pipeline (`NanoGAP`) utilises a variety of open-source tools and software to automate a non-hybrid (long reads only) genome assembly and self-correction of error prone nanopore reads
 
 <!-- ---
 
